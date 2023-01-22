@@ -1,0 +1,63 @@
+@import "./../abstracts/vars";
+@import "./../abstracts/mixin";
+
+@include media (1330px) {
+    .sidebar {
+        width: 100px;
+        padding: 40px 10px 30px;
+    }
+
+    .logo {
+        @include bgImg ();
+        @include size (80px, 40px);
+    }
+
+    .menu__main,
+    .menu__works,
+    .menu__options {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu__item {
+        @include size (30px, 30px);
+    }
+
+    .menu__link {
+        display: none;
+    }
+
+    .menu__counter {
+        display: none;
+    }
+}
+
+
+@include media (1225px) {
+    .sidebar {
+        display: none;
+    }
+
+    .burger__menu {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav__menu {
+        display: none;
+    }
+
+    .dashboard__content-btn {
+        top: 50%;
+    }
+}
+
+
+@include media (1000px) {
+    .dashboard__content {
+        position: relative;
+        z-index: 99;
+        overflow-x: scroll;
+    }
+}

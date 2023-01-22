@@ -1,0 +1,26 @@
+@import "./../abstracts/vars";
+@import "./../abstracts/mixin";
+
+
+.chart {
+    width: 318px;
+    height: 197px;
+    background-color: $bgColor;
+    border-radius: 12px;
+
+    &:hover {
+        background-color: #0329E8;
+    }
+
+    &-title {
+        @include text (20px, 400, 24px, $normalColor);
+        margin: 24px 0 18px 24px;
+    }
+
+    &-bg {
+        background-image: url("./../../assets/images/Chart-card.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        @include size (318px, 131px);
+    }
+}

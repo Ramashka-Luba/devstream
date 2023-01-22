@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+@import "./abstracts/vars";
+@import "./abstracts/mixin";
+
+body {
+    font-family: "Inter", sans-serif;
+    min-height: 100vh;
+    @include text(14px, 400, 17px, $normalColor);
+    letter-spacing: -2%;
+    background-color: $mainBgColor;
+    display: flex;
+    overflow-x: hidden;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+
+@import "./layout/sidebar";
+@import "./blocks/logo";
+@import "./blocks/menu";
+
+@import "./layout/main";
+@import "./blocks/burgerMenu";
+@import "./blocks/nav";
+@import "./blocks/form";
+@import "./blocks/user";
+@import "./blocks/dashbord";
+@import "./blocks/data";
+@import "./blocks/card";
+@import "./blocks/chart";
+@import "./blocks/table";
+
+@import "./blocks/media";

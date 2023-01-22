@@ -1,0 +1,14 @@
+@import "./../abstracts/mixin";
+@import "./../abstracts/vars";
+
+.logo {
+    background-image: url("./../../assets/images/logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 64px;
+
+    &__link {
+        display: inline-block;
+        @include size (100%, 100%);
+    }
+}

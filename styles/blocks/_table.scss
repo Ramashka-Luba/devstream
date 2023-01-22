@@ -1,0 +1,49 @@
+@import "./../abstracts/vars";
+@import "./../abstracts/mixin";
+
+.table {
+    max-width: 994px;
+    width: 100%;
+
+    table {
+        width: 100%;
+
+        th {
+            @include text (16px, 400, 19px, $lablelColor);
+            padding: 10px;
+            text-align: left;
+            width: 4.5%;
+
+            &:nth-child(2) {
+                width: 26.6%;
+            }
+
+            &:nth-child(3) {
+                width: 26.3%;
+            }
+
+            &:nth-child(4) {
+                width: 12%;
+            }
+
+            &:nth-child(5) {
+                width: 30.6%;
+            }
+        }
+
+        td {
+            padding: 10px;
+            border-top: 1px solid $lablelColor;
+
+            &:nth-child(3) {
+                max-width: 260px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                display: inline-block;
+                color: #0931F5;
+                cursor: pointer;
+            }
+        }
+    }
+}

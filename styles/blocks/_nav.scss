@@ -1,0 +1,33 @@
+@import "./../abstracts/vars";
+@import "./../abstracts/mixin";
+
+.nav {
+    @include flexBetween ();
+    &__menu {
+        max-width: 725px;
+        width: 100%;
+        display: flex;
+    }
+    &__list {
+        @include flexCenter ();
+    }
+    &__item {
+        margin-left: 40px;
+    }
+    &__link {
+        color: $lablelColor;
+        display: inline-block;
+        transition: transform 0.2s;
+        &:hover {
+                transform: scale(1.1);
+            }
+    }
+}
+
+.active--nav {
+    color: $normalColor;
+}
+
+
+
+

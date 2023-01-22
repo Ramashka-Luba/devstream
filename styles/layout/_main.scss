@@ -1,0 +1,16 @@
+@import "./../abstracts/vars";
+@import "./../abstracts/mixin";
+
+.main {
+    padding: 20px 28px 33px;
+    width: 100%;
+
+    &__nav {
+        margin-bottom: 40px;
+    }
+
+    &__title {
+        @include text (32px, 600, 39px, $normalColor);
+        margin-bottom: 50px;
+    }
+}

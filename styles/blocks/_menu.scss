@@ -1,0 +1,95 @@
+@import "./../abstracts/mixin";
+@import "./../abstracts/vars";
+
+.menu {
+    &__title {
+        @include text (10px, 400, 12px, $lablelColor);
+        text-transform: uppercase;
+        margin-bottom: 16px;
+    }
+
+    &__list {
+        margin-bottom: 76px;
+    }
+
+    &__item {
+        margin-bottom: 24px;
+        cursor: pointer;
+        @include bgImg ();
+        @include flexBetween ();
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &--bg-dashboard {
+            background-image: url("./../../assets/images/menuIcon/Category.png");
+        }
+
+        &--bg-messages {
+            background-image: url("./../../assets/images/menuIcon/Message.png");
+        }
+
+        &--bg-reports {
+            background-image: url("./../../assets/images/menuIcon/Paper.png");
+        }
+
+        &--bg-notifications {
+            background-image: url("./../../assets/images/menuIcon/Notification.png");
+        }
+
+        &--bg-invoices {
+            background-image: url("./../../assets/images/menuIcon/Wallet.png");
+        }
+
+        &--bg-bookmarks {
+            background-image: url("./../../assets/images/menuIcon/Bookmark.png");
+        }
+
+        &--bg-conferences {
+            background-image: url("./../../assets/images/menuIcon/Video.png");
+        }
+
+        &--bg-settings {
+            background-image: url("./../../assets/images/menuIcon/Setting.png");
+        }
+
+        &--bg-about {
+            background-image: url("./../../assets/images/menuIcon/InfoSquare.png");
+        }
+    }
+
+    &__link {
+        font-weight: 500;
+        padding-left: 32px;
+        display: inline-block;
+        transition: transform 0.2s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    &__counter {
+        padding: 2px 6px;
+        border-radius: 26px;
+        font-size: 13px;
+        line-height: 16px;
+        font-weight: 500;
+
+        &--blue {
+            background-color: #0C3247;
+            color: #42BBFF;
+        }
+
+        &--red {
+            background-color: #BF3931;
+            color: #fff;
+        }
+    }
+}
+
+.active--menu {
+    color: #42BBFF;
+    background-image: url("./../../assets/images/menuIcon/CategoryActive.png");
+}

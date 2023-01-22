@@ -1,0 +1,133 @@
+@import "./../abstracts/vars";
+@import "./../abstracts/mixin";
+
+.card {
+    min-width: 318px;
+    height: 197px;
+    background-color: $bgColor;
+    border-radius: 12px;
+    padding: 24px;
+
+    &__title {
+        @include flexBetween ();
+        margin-bottom: 18px;
+
+        &-text {
+            @include text (20px, 400, 24px, $normalColor);
+        }
+
+        &-icon {
+            @include bgImg ();
+            @include size (28px, 28px);
+
+            &--visitors {
+                background-image: url("./../../assets/images/cardIcon/User.png");
+            }
+
+            &--views {
+                background-image: url("./../../assets/images/cardIcon/Show.png");
+            }
+
+            &--rates {
+                background-image: url("./../../assets/images/cardIcon/Chart.png");
+            }
+
+            &--users {
+                background-image: url("./../../assets/images/cardIcon/AddUser.png");
+            }
+
+            &--activity {
+                background-image: url("./../../assets/images/cardIcon/Activity.png");
+            }
+        }
+    }
+
+    &__content {
+        @include text (58px, 600, 70px, $normalColor);
+        margin-bottom: 18px;
+
+        &--blue {
+            color: #17B1EA;
+        }
+
+        &--gray {
+            color: $normalColor;
+        }
+    }
+
+    &__bottom {
+        @include flexBetween ();
+    }
+
+    &__percent--green {
+        @include text (16px, 400, 19px, #00DE73);
+    }
+
+    &__percent--red {
+        @include text (16px, 400, 19px, #F21010);
+    }
+
+    &__swap {
+        @include bgImg ();
+        @include size (24px, 24px);
+
+        &--green {
+            background-image: url("./../../assets/images/swapIcon/Swap-green.png");
+        }
+
+        &--red {
+            background-image: url("./../../assets/images/swapIcon/Swap-red.png");
+        }
+    }
+
+    &:hover {
+        background-color: #0329E8;
+
+        .card {
+            &__title {
+                &-text {
+                    color: #EFFFF7;
+                }
+
+                &-icon {
+                    &--visitors {
+                        background-image: url("./../../assets/images/cardIcon/User-light.png");
+                    }
+
+                    &--views {
+                        background-image: url("./../../assets/images/cardIcon/Show-light.png");
+                    }
+
+                    &--rates {
+                        background-image: url("./../../assets/images/cardIcon/Chart-light.png");
+                    }
+
+                    &--users {
+                        background-image: url("./../../assets/images/cardIcon/AddUser-light.png");
+                    }
+
+                    &--activity {
+                        background-image: url("./../../assets/images/cardIcon/Activity-light.png");
+                    }
+                }
+            }
+
+            &__content {
+                color: #EFFFF7;
+            }
+
+            &__percent--green,
+            &__percent--red {
+                color: #EFFFF7;
+            }
+
+            &__swap {
+
+                &--green,
+                &--red {
+                    background-image: url("./../../assets/images/swapIcon/Swap-hover.png");
+                }
+            }
+        }
+    }
+}

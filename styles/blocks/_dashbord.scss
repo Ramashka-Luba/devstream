@@ -1,0 +1,44 @@
+@import "./../abstracts/vars";
+@import "./../abstracts/mixin";
+
+.dashboard {
+    &__title {
+        @include text (20px, 600, 24px, $normalColor);
+        margin-bottom: 5px;
+    }
+
+    &__data {
+        margin-bottom: 28px;
+    }
+
+    &__content {
+        margin-bottom: 64px;
+        display: flex;
+        align-items: center;
+
+        &-card {
+            margin-right: 20px;
+        }
+    }
+    &__content-btn {
+        background: transparent;
+        border: none;
+        color: #42BBFF;
+        position: relative;
+        transition: transform 0.2s;
+        &::after {
+            content: "";
+            background-image: url("./../../assets/images/Arrow-Right.png");
+            @include bgImg ();
+            @include size (12px, 12px);
+            position: absolute;
+            top: 2px;
+            right: -15px;
+        }
+        
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+

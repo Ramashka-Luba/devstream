@@ -1,0 +1,26 @@
+@import "./../abstracts/vars";
+@import "./../abstracts/mixin";
+
+.burger__menu {
+    display: none;
+
+    &-logo {
+        margin-right: 30px;
+        background-image: url("./../../assets/images/logo.png");
+        @include bgImg ();
+        @include size (80px, 40px);
+    }
+
+    &-link {
+        display: inline-block;
+        @include size (100%, 100%);
+    }
+
+    &-btn {
+        background-color: transparent;
+        border: none;
+        background-image: url("./../../assets/images/burgerIcon/button-burger.png");
+        @include bgImg ();
+        @include size (30px, 30px);
+    }
+}

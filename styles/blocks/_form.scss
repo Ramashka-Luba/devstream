@@ -1,0 +1,48 @@
+@import "./../abstracts/vars";
+@import "./../abstracts/mixin";
+
+.form {
+    position: relative;
+    max-width: 373px;
+    width: 100%;
+    height: 39px;
+    &__input {
+        width: 100%;
+        padding: 11px;
+        background: #1D2032;
+        border: none;
+        border-radius: 8px;
+        color: $lablelColor;
+        outline: none;
+    
+        &::placeholder {
+            color: #424A70;
+        }
+    }
+    &__btn {
+        position: absolute;
+        top: 0;
+        right: 0px;
+        width: 40px;
+        height: 100%;
+        border: none;
+        background: #1D2032;
+        border-radius: 0 8px 8px 0;
+        cursor: pointer;
+    
+        &::after {
+            content: "";
+            background-image: url("./../../assets/images/Search.png");
+            @include bgImg ();
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            transform: translate(50%, -50%);
+        }
+    }
+}
+
+
+

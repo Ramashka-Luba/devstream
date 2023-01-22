@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles/css/normalize.css">
+    <link rel="stylesheet" href="./styles/css/index.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- sidebar -->
+    <section class="sidebar">
+        <div class="sidebar__top">
+            <div class="sidebar__logo logo">
+                <a href="#" class="logo__link"></a>
+            </div>
+            <nav class="sidebar__menu menu">
+                <div class="menu__main">
+                    <h3 class="menu__title">Main Menu</h3>
+                    <ul class="menu__list">
+                        <li title="Dashboard" class="menu__item menu__item--bg-dashboard active--menu">
+                            <a class="menu__link" href="#">Dashboard</a>
+                        </li>
+                        <li title="Messages" class="menu__item menu__item--bg-messages">
+                            <a class="menu__link" href="#">Messages</a>
+                            <span class="menu__counter menu__counter--blue">3 new</span>
+                        </li>
+                        <li title="Reports" class="menu__item menu__item--bg-reports">
+                            <a class="menu__link" href="#">Reports</a>
+                        </li>
+                        <li title="Notifications" class="menu__item menu__item--bg-notifications">
+                            <a class="menu__link" href="#">Notifications</a>
+                        </li>
+                        <li title="Invoices" class="menu__item menu__item--bg-invoices">
+                            <a class="menu__link" href="#">Invoices</a>
+                            <span class="menu__counter menu__counter--red">10+</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu__works">
+                    <h3 class="menu__title">Works</h3>
+                    <ul class="menu__list">
+                        <li title="Bookmarks" class="menu__item menu__item--bg-bookmarks">
+                            <a class="menu__link" href="">Bookmarks</a>
+                        </li>
+                        <li title="Conferences" class="menu__item menu__item--bg-conferences">
+                            <a class="menu__link" href="">Conferences</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu__options">
+                    <h4 class="menu__title">Options</h4>
+                    <ul class="menu__list">
+                        <li title="Settings" class="menu__item menu__item--bg-settings">
+                            <a class="menu__link" href="">Settings</a>
+                        </li>
+                        <li title="About" class="menu__item menu__item--bg-about">
+                            <a class="menu__link" href="">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="sidebar__bottom">
+            <button class="sidebar__btn">Light Mode</button>
+        </div>
+    </section>
+
+
+    <!-- main -->
+    <section class="main">
+        <div class="main__nav nav">
+
+            <!-- бургер кнопка-->
+            <div class="burger__menu">
+                <div class="burger__menu-logo">
+                    <a href="#" class="burger__menu-link"></a>
+                </div>
+                <button class="burger__menu-btn"></button>
+            </div>
+            <!-- бургер кнопка-->
+
+            <div class="nav__menu">
+                <form class="nav__form form">
+                    <input class="form__input" type="text" placeholder="Search...">
+                    <button class="form__btn" type="submit"></button>
+                </form>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link active--nav">Analytics</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Earnings</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Ads Experiments</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="main__user user ">
+                <div class="user__notif"></div>
+                <div class="user__icon"></div>
+                <div class="user__text">
+                    <div class="user__text-welcome">Welcome</div>
+                    <div class="user__name">
+                        <div class="user__name-text">Daniel Estasmos</div>
+                        <button class="user__name-btn"></button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <h2 class="main__title">Dashboard</h2>
+        <div class="main__dashboard dashboard">
+            <div class="dashboard__perfomanse">
+                <h3 class="dashboard__title">Site performance</h3>
+                <div class="dashboard__data data">
+                    <div class="data__information">Today vs 7 days ago</div>
+                    <div class="data__date">June 03, 22 to July 02, 22</div>
+                </div>
+                <div class="dashboard__content">
+
+                    <div class="dashboard__content-card card">
+                        <div class="card__title">
+                            <div class="card__title-text">Visitors</div>
+                            <div class="card__title-icon card__title-icon--visitors"></div>
+                        </div>
+                        <div class="card__content card__content--blue ">92,680</div>
+                        <div class="card__bottom">
+                            <div class="card__percent--green">+3,840 (26,80%)</div>
+                            <div class="card__swap card__swap--green"></div>
+                        </div>
+                    </div>
+
+                    <div class="dashboard__content-card card">
+                        <div class="card__title">
+                            <div class="card__title-text">Page views</div>
+                            <div class="card__title-icon card__title-icon--views"></div>
+                        </div>
+                        <div class="card__content card__content--blue ">580.5K</div>
+                        <div class="card__bottom">
+                            <div class="card__percent--green">+210K (16,20%)</div>
+                            <div class="card__swap card__swap--green"></div>
+                        </div>
+                    </div>
+
+                    <div class="dashboard__content-card card">
+                        <div class="card__title">
+                            <div class="card__title-text">Bounce rates</div>
+                            <div class="card__title-icon card__title-icon--rates"></div>
+                        </div>
+                        <div class="card__content card__content--blue ">15.43%</div>
+                        <div class="card__bottom">
+                            <div class="card__percent--red">-0.74 (0.74%)</div>
+                            <div class="card__swap card__swap--red"></div>
+                        </div>
+                    </div>
+
+                    <button class="dashboard__content-btn">View all</button>
+                </div>
+            </div>
+            <div class="dashboard__statistics">
+                <h3 class="dashboard__title">Users statistics</h3>
+                <div class="dashboard__data data">
+                    <div class="data__information">Today’s statistics</div>
+                    <div class="data__date">June 03, 22 to July 02, 22</div>
+                </div>
+                <div class="dashboard__content">
+                    <div class="dashboard__content-card chart">
+                        <div class="chart-title">Unique visitors</div>
+                        <div class="chart-bg"></div>
+                    </div>
+                    <div class="dashboard__content-card card">
+                        <div class="card__title">
+                            <div class="card__title-text">New users</div>
+                            <div class="card__title-icon card__title-icon--users"></div>
+                        </div>
+                        <div class="card__content card__content--gray ">17,805</div>
+                        <div class="card__bottom">
+                            <div class="card__percent--green">+1,500 (4,17%)</div>
+                        </div>
+                    </div>
+                    <div class="dashboard__content-card card">
+                        <div class="card__title">
+                            <div class="card__title-text">Online users</div>
+                            <div class="card__title-icon card__title-icon--activity"></div>
+                        </div>
+                        <div class="card__content card__content--gray ">1,846</div>
+                        <div class="card__bottom">
+                            <div class="card__percent--green">+530 (8,38%)</div>
+                        </div>
+                    </div>
+                    <button class="dashboard__content-btn">View all</button>
+                </div>
+            </div>
+            <div class="dashboard__sites">
+                <h3 class="dashboard__title">Top referring sites</h3>
+                <div class="dashboard__data data">
+                    <div class="data__information">Outbond links that come to your site</div>
+                </div>
+                <div class="dashboard__table table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Site title</th>
+                                <th>Link</th>
+                                <th>Total clicks</th>
+                                <th>Referrer type</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1.</td>
+                                <td>Stack Overflow</td>
+                                <td>
+                                    <a href="https://stackoverflow.com/questions/45830028/rel-nofollow-noopener-possible-to-have-both-at-the-same-time">
+                                        https://stackoverflow.com/questions/45830028/rel-nofollow-noopener-possible-to-have-both-at-the-same-time
+                                    </a>
+                                </td>
+                                <td>120</td>
+                                <td>nofollow, noopener</td>
+                            </tr>
+                            <tr>
+                                <td>2.</td>
+                                <td>Youtube</td>
+                                <td>
+                                    <a href="https://stackoverflow.com/questions/45830028/rel-nofollow-noopener-possible-to-have-both-at-the-same-time">
+                                        https://stackoverflow.com/questions/45830028/rel-nofollow-noopener-possible-to-have-both-at-the-same-time
+                                    </a>
+                                </td>
+                                <td>14,522</td>
+                                <td>nofollow</td>
+                            </tr>
+                            <tr>
+                                <td>3.</td>
+                                <td>Github</td>
+                                <td>
+                                    <a href="https://stackoverflow.com/questions/45830028/rel-nofollow-noopener-possible-to-have-both-at-the-same-time">
+                                        https://stackoverflow.com/questions/45830028/rel-nofollow-noopener-possible-to-have-both-at-the-same-time
+                                    </a>
+                                </td>
+                                <td>36</td>
+                                <td>nofollow</td>
+                            </tr>
+                            <tr>
+                                <td>4.</td>
+                                <td>Gosh William</td>
+                                <td>
+                                    <a href="https://stackoverflow.com/questions/45830028/rel-nofollow-noopener-possible-to-have-both-at-the-same-time">
+                                        https://stackoverflow.com/questions/45830028/rel-nofollow-noopener-possible-to-have-both-at-the-same-time
+                                    </a>
+                                </td>
+                                <td>580</td>
+                                <td>ugc</td>
+                            </tr>
+                            <tr>
+                                <td>5.</td>
+                                <td>Stack Overflow</td>
+                                <td>
+                                    <a href="https://stackoverflow.com/questions/45830028/rel-nofollow-noopener-possible-to-have-both-at-the-same-time">
+                                        https://stackoverflow.com/questions/45830028/rel-nofollow-noopener-possible-to-have-both-at-the-same-time
+                                    </a>
+                                </td>
+                                <td>212</td>
+                                <td>nofollow, noopener</td>
+                            </tr>
+                            <tr>
+                                <td>6.</td>
+                                <td>Stack Overflow</td>
+                                <td>
+                                    <a href="https://stackoverflow.com/questions/45830028/rel-nofollow-noopener-possible-to-have-both-at-the-same-time">
+                                        https://stackoverflow.com/questions/45830028/rel-nofollow-noopener-possible-to-have-both-at-the-same-time
+                                    </a>
+                                </td>
+                                <td>4</td>
+                                <td>nofollow, noopener</td>
+                            </tr>
+                            <tr>
+                                <td>7.</td>
+                                <td>Stack Overflow</td>
+                                <td>
+                                    <a href="https://stackoverflow.com/questions/45830028/rel-nofollow-noopener-possible-to-have-both-at-the-same-time">
+                                        https://stackoverflow.com/questions/45830028/rel-nofollow-noopener-possible-to-have-both-at-the-same-time
+                                    </a>
+                                </td>
+                                <td>51</td>
+                                <td>nofollow, noopener</td>
+                            </tr>
+                            <tr>
+                                <td>8.</td>
+                                <td>Stack Overflow</td>
+                                <td>
+                                    <a href="https://stackoverflow.com/questions/45830028/rel-nofollow-noopener-possible-to-have-both-at-the-same-time">
+                                        https://stackoverflow.com/questions/45830028/rel-nofollow-noopener-possible-to-have-both-at-the-same-time
+                                    </a>
+                                </td>
+                                <td>68</td>
+                                <td>nofollow, noopener</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

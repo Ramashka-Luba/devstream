@@ -1,0 +1,31 @@
+@import "./../abstracts/mixin";
+@import "./../abstracts/vars";
+
+.sidebar {
+    max-width: 290px;
+    width: 100%;
+    min-height: 100vh;
+    border-right: 1.5px solid #262835;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 28px 30px;
+
+    &__logo {
+        margin-bottom: 48px;
+    }
+
+    &__bottom {
+        background-image: url("./../../assets/images/lucide_sun-moon.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    &__btn {
+        margin-left: 32px;
+        @include text (10px, 400, 12px, $lablelColor);
+        text-transform: uppercase;
+        border: none;
+        background: transparent;
+    }
+}
