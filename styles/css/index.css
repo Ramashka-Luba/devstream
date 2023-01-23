@@ -77,8 +77,6 @@ a {
 .menu__item {
   margin-bottom: 24px;
   cursor: pointer;
-  background-size: contain;
-  background-repeat: no-repeat;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -86,38 +84,40 @@ a {
 .menu__item:last-child {
   margin-bottom: 0;
 }
-.menu__item--bg-dashboard {
-  background-image: url("./../../assets/images/menuIcon/Category.png");
-}
-.menu__item--bg-messages {
-  background-image: url("./../../assets/images/menuIcon/Message.png");
-}
-.menu__item--bg-reports {
-  background-image: url("./../../assets/images/menuIcon/Paper.png");
-}
-.menu__item--bg-notifications {
-  background-image: url("./../../assets/images/menuIcon/Notification.png");
-}
-.menu__item--bg-invoices {
-  background-image: url("./../../assets/images/menuIcon/Wallet.png");
-}
-.menu__item--bg-bookmarks {
-  background-image: url("./../../assets/images/menuIcon/Bookmark.png");
-}
-.menu__item--bg-conferences {
-  background-image: url("./../../assets/images/menuIcon/Video.png");
-}
-.menu__item--bg-settings {
-  background-image: url("./../../assets/images/menuIcon/Setting.png");
-}
-.menu__item--bg-about {
-  background-image: url("./../../assets/images/menuIcon/InfoSquare.png");
-}
 .menu__link {
   font-weight: 500;
   padding-left: 32px;
   display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
   transition: transform 0.2s;
+}
+.menu__link--dashboard {
+  background-image: url("./../../assets/images/menuIcon/Category.png");
+}
+.menu__link--messages {
+  background-image: url("./../../assets/images/menuIcon/Message.png");
+}
+.menu__link--reports {
+  background-image: url("./../../assets/images/menuIcon/Paper.png");
+}
+.menu__link--notifications {
+  background-image: url("./../../assets/images/menuIcon/Notification.png");
+}
+.menu__link--invoices {
+  background-image: url("./../../assets/images/menuIcon/Wallet.png");
+}
+.menu__link--bookmarks {
+  background-image: url("./../../assets/images/menuIcon/Bookmark.png");
+}
+.menu__link--conferences {
+  background-image: url("./../../assets/images/menuIcon/Video.png");
+}
+.menu__link--settings {
+  background-image: url("./../../assets/images/menuIcon/Setting.png");
+}
+.menu__link--about {
+  background-image: url("./../../assets/images/menuIcon/InfoSquare.png");
 }
 .menu__link:hover {
   transform: scale(1.1);
@@ -582,11 +582,11 @@ a {
     flex-direction: column;
     align-items: center;
   }
-  .menu__item {
+  .menu__link {
     width: 30px;
     height: 30px;
   }
-  .menu__link {
+  .menu__link-text {
     display: none;
   }
   .menu__counter {

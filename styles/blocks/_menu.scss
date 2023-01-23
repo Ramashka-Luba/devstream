@@ -15,55 +15,92 @@
     &__item {
         margin-bottom: 24px;
         cursor: pointer;
-        @include bgImg ();
+        // @include bgImg ();
         @include flexBetween ();
 
         &:last-child {
             margin-bottom: 0;
         }
 
-        &--bg-dashboard {
-            background-image: url("./../../assets/images/menuIcon/Category.png");
-        }
+        // &--bg-dashboard {
+        //     background-image: url("./../../assets/images/menuIcon/Category.png");
+        // }
 
-        &--bg-messages {
-            background-image: url("./../../assets/images/menuIcon/Message.png");
-        }
+        // &--bg-messages {
+        //     background-image: url("./../../assets/images/menuIcon/Message.png");
+        // }
 
-        &--bg-reports {
-            background-image: url("./../../assets/images/menuIcon/Paper.png");
-        }
+        // &--bg-reports {
+        //     background-image: url("./../../assets/images/menuIcon/Paper.png");
+        // }
 
-        &--bg-notifications {
-            background-image: url("./../../assets/images/menuIcon/Notification.png");
-        }
+        // &--bg-notifications {
+        //     background-image: url("./../../assets/images/menuIcon/Notification.png");
+        // }
 
-        &--bg-invoices {
-            background-image: url("./../../assets/images/menuIcon/Wallet.png");
-        }
+        // &--bg-invoices {
+        //     background-image: url("./../../assets/images/menuIcon/Wallet.png");
+        // }
 
-        &--bg-bookmarks {
-            background-image: url("./../../assets/images/menuIcon/Bookmark.png");
-        }
+        // &--bg-bookmarks {
+        //     background-image: url("./../../assets/images/menuIcon/Bookmark.png");
+        // }
 
-        &--bg-conferences {
-            background-image: url("./../../assets/images/menuIcon/Video.png");
-        }
+        // &--bg-conferences {
+        //     background-image: url("./../../assets/images/menuIcon/Video.png");
+        // }
 
-        &--bg-settings {
-            background-image: url("./../../assets/images/menuIcon/Setting.png");
-        }
+        // &--bg-settings {
+        //     background-image: url("./../../assets/images/menuIcon/Setting.png");
+        // }
 
-        &--bg-about {
-            background-image: url("./../../assets/images/menuIcon/InfoSquare.png");
-        }
+        // &--bg-about {
+        //     background-image: url("./../../assets/images/menuIcon/InfoSquare.png");
+        // }
     }
 
     &__link {
         font-weight: 500;
         padding-left: 32px;
         display: inline-block;
+        @include bgImg ();
         transition: transform 0.2s;
+        
+        &--dashboard {
+            background-image: url("./../../assets/images/menuIcon/Category.png");
+        }
+
+        &--messages {
+            background-image: url("./../../assets/images/menuIcon/Message.png");
+        }
+
+        &--reports {
+            background-image: url("./../../assets/images/menuIcon/Paper.png");
+        }
+
+        &--notifications {
+            background-image: url("./../../assets/images/menuIcon/Notification.png");
+        }
+
+        &--invoices {
+            background-image: url("./../../assets/images/menuIcon/Wallet.png");
+        }
+
+        &--bookmarks {
+            background-image: url("./../../assets/images/menuIcon/Bookmark.png");
+        }
+
+        &--conferences {
+            background-image: url("./../../assets/images/menuIcon/Video.png");
+        }
+
+        &--settings {
+            background-image: url("./../../assets/images/menuIcon/Setting.png");
+        }
+
+        &--about {
+            background-image: url("./../../assets/images/menuIcon/InfoSquare.png");
+        }
 
         &:hover {
             transform: scale(1.1);
@@ -88,6 +125,7 @@
         }
     }
 }
+
 
 .active--menu {
     color: #42BBFF;
